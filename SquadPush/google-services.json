@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59191896332",
+    "project_id": "squad-push",
+    "storage_bucket": "squad-push.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59191896332:android:acb465961693eac5400129",
+        "android_client_info": {
+          "package_name": "com.squad.push.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMFXWdZObRoR--2hmLSF4qef4X2fjhRhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
