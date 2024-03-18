@@ -10,29 +10,35 @@
            Padding="30,0"
            VerticalOptions="Center">
 
-
-
                 <Label
                Text="Bem vindo!"
                SemanticProperties.HeadingLevel="Level1"
                FontSize="32"
                HorizontalOptions="Center" />
-
-                <Button
-               x:Name="CounterBtn"
-               Text="Registrar"
-               SemanticProperties.Hint="Registrar"
-               Clicked="OnCounterClicked"
-               HorizontalOptions="Center" />
+              
 
                 <Editor
                 x:Name="LblToken"
                     WidthRequest="300"
                     AutoSize="TextChanges"
                Text=""
-               IsEnabled="True"
-               
+               IsEnabled="True"               
                HorizontalOptions="Center" />
+
+                <Button Clicked="MyPushes_Clicked" Text="My Pushes" />
+
+                <Button Clicked="Button_Clicked" Text="Limpar" />
+
+                <Label
+       Text="Deeplink valido: DOG OUUUUU CAT"
+       SemanticProperties.HeadingLevel="Level1"       
+       HorizontalOptions="Center" />
+
+                <Label
+       Text="Tag do Deeplink: Click"
+       SemanticProperties.HeadingLevel="Level1"       
+       HorizontalOptions="Center" />
+
 
             </VerticalStackLayout>
         </ScrollView>

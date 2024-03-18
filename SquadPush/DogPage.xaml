@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SquadPush.DogPage">
+
+    <ScrollView>
+        <ScrollView>
+            <VerticalStackLayout
+           Spacing="25"
+           Padding="30,0"
+           VerticalOptions="Center">
+
+
+
+                <Label
+ Text="DOG"
+ SemanticProperties.HeadingLevel="Level1"
+ FontSize="32"
+ HorizontalOptions="Center" />
+                <Image Source="https://t3.ftcdn.net/jpg/02/73/16/24/360_F_273162497_ShAAB1TH0vhM4UUWbhBuao8jtGBDubwD.jpg" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </ScrollView>
+</ContentPage>

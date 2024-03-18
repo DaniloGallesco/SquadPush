@@ -11,7 +11,7 @@ namespace SquadPush
     {
 
         protected override void OnCreate(Bundle savedInstanceState)
-        {
+        {  
             base.OnCreate(savedInstanceState);
             HandleIntent(Intent);
             CreateNotificationChannelIfNeeded();
@@ -19,6 +19,8 @@ namespace SquadPush
 
         protected override void OnNewIntent(Intent intent)
         {
+           
+
             base.OnNewIntent(intent);
             HandleIntent(intent);
         }
@@ -26,6 +28,7 @@ namespace SquadPush
         private static void HandleIntent(Intent intent)
         {
             FirebaseCloudMessagingImplementation.OnNewIntent(intent);
+            
         }
 
         private void CreateNotificationChannelIfNeeded()
@@ -36,6 +39,8 @@ namespace SquadPush
             }
         }
 
+
+
         private void CreateNotificationChannel()
         {
             var channelId = $"{PackageName}.general";
@@ -43,7 +48,7 @@ namespace SquadPush
             var channel = new NotificationChannel(channelId, "General", NotificationImportance.Default);
             notificationManager.CreateNotificationChannel(channel);
             FirebaseCloudMessagingImplementation.ChannelId = channelId;
-            //FirebaseCloudMessagingImplementation.SmallIconRef = Resource.Drawable.ic_push_small;
+            
         }
     }
 }

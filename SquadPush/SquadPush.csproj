@@ -71,6 +71,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
   
   <!--<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios' OR '$(TargetFramework)' == 'net7.0-android'">
@@ -89,5 +90,27 @@
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
     <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.9.22.1" ExcludeAssets="build;buildTransitive" />
     <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="1.9.22.1" ExcludeAssets="build;buildTransitive" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MyPushes.xaml.cs">
+      <DependentUpon>MyPushes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="DogPage.xaml.cs">
+      <DependentUpon>DogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="CatPage.xaml.cs">
+      <DependentUpon>CatPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <MauiXaml Update="MyPushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
+    <MauiXaml Update="DogPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
+    <MauiXaml Update="CatPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
   </ItemGroup>
 </Project>
